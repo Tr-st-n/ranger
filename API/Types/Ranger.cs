@@ -1,4 +1,4 @@
-﻿namespace RangerWebAPI.Types;
+﻿namespace API.Types;
 
 using System.Collections;
 

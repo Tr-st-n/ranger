@@ -1,4 +1,4 @@
-﻿namespace RangerWebAPI.Models;
+﻿namespace API.Models;
 
 using System.Diagnostics.CodeAnalysis;
 

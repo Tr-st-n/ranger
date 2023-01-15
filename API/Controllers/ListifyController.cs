@@ -1,7 +1,6 @@
+namespace API.Controllers;
+
 using Microsoft.AspNetCore.Mvc;
-
-namespace RangerWebAPI.Controllers;
-
 using Models;
 using Types;
 

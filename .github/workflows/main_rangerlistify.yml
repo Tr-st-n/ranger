@@ -53,5 +53,5 @@ jobs:
         with:
           app-name: 'RangerListify'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_F52A5D7CABA64A3883AD02147409486F }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_3F304062A14840839355B2C7151995E3 }}
           package: .

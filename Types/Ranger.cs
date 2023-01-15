@@ -18,7 +18,7 @@ public class Ranger : IList<int>
         // Ensure begin ctor param is less than end
         if (begin >= end)
         {
-            throw new ArgumentOutOfRangeException($"Begin value must be greater than End value");
+            throw new ArgumentOutOfRangeException(nameof(begin));
         }
 
         // Initialize properties

@@ -253,7 +253,8 @@ public class RangerTests
         // Act and Assert - Enumerated values are as expected
         foreach (var item in ranger)
         {
-            Assert.Equal(item, index + item);
+            Assert.Equal(item, begin + index);
+            index++;
         }
     }
 

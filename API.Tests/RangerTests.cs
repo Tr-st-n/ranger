@@ -239,6 +239,27 @@ public class RangerTests
 
     #endregion
 
+    #region Enumeration
+
+    [Fact]
+    public void Enumeration_ForEach_ValuesAreValid()
+    {
+        // Arrange - Ranger of values 100 to 200
+        var begin = 100;
+        var end = 200;
+        var ranger = new Ranger(begin, end);
+        var index = 0;
+
+        // Act and Assert - Enumerated values are as expected
+        foreach (var item in ranger)
+        {
+            Assert.Equal(item, begin + index);
+            index++;
+        }
+    }
+
+    #endregion
+
     #region Not Supported
 
     [Fact]

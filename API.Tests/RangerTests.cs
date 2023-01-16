@@ -209,7 +209,7 @@ public class RangerTests
         var array = new[] { 1, 1, 1, 1, 1 };
         var startingIndex = 3;
 
-        // Act and Assert - Copy to with invalid index throws ArgumentOutOfRangeException
+        // Act and Assert - Copy to with not enough space throws ArgumentException
         Assert.Throws<ArgumentException>(() => ranger.CopyTo(array, startingIndex));
     }
 
@@ -298,7 +298,7 @@ public class RangerTests
         // Arrange - Ranger of values 100 to 200
         var ranger = new Ranger(100, 200);
 
-        // Act and Assert - Insert throws NotSupportedException
+        // Act and Assert - Remove throws NotSupportedException
         Assert.Throws<NotSupportedException>(() => ranger.Remove(150));
     }
 
@@ -308,7 +308,7 @@ public class RangerTests
         // Arrange - Ranger of values 100 to 200
         var ranger = new Ranger(100, 200);
 
-        // Act and Assert - Insert throws NotSupportedException
+        // Act and Assert - RemoveAt throws NotSupportedException
         Assert.Throws<NotSupportedException>(() => ranger.RemoveAt(50));
     }
 
